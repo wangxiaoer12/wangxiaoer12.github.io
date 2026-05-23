@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>箐舟照相馆</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: '微软雅黑', 'Arial', sans-serif;
+      background: #f5f6fa;
+      color: #222;
+      min-height:100vh;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 24px 40px 24px 40px;
+      background: #fff;
+      box-shadow: 0 2px 8px 0 #e2e2e2;
+      position: relative;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #1abc9c;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+    }
+    .services {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      margin-top: 80px;
+    }
+    .service {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px 0 #ececec;
+      padding: 36px 48px;
+      text-align: center;
+      width: 200px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+    .service:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 4px 24px 0 #c3dfdd;
+    }
+    .service-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #16a085;
+    }
+    .service-desc {
+      font-size: 16px;
+      color: #444;
+    }
+    @media (max-width: 700px) {
+      .services {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 36px;
+      }
+      .service {
+        width: 90vw;
+        max-width: 300px;
+        padding: 26px 12px;
+      }
+      header {
+        padding: 16px 16px;
+      }
+      main {
+        margin-top: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      箐舟照相馆
+    </div>
+  </header>
+  <main>
+    <section class="services">
+      <div class="service">
+        <div class="service-title">单人照</div>
+        <div class="service-desc">为您个人量身定制<br>专业灯光和造型</div>
+      </div>
+      <div class="service">
+        <div class="service-title">多人照</div>
+        <div class="service-desc">适合家庭、朋友、团队等合影<br>记录美好瞬间</div>
+      </div>
+      <div class="service">
+        <div class="service-title">证件照</div>
+        <div class="service-desc">标准化证件照拍摄及修图<br>满足各类用途需求</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
